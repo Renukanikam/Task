@@ -1,0 +1,155 @@
+/* Main container styles */
+.main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.main:hover {
+  transform: scale(1.02);
+}
+
+/* Form and input styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db; /* Blue color for focus */
+  outline: none;
+}
+
+button {
+  background-color: #3498db; /* Blue color for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Table styles */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+table th {
+  background-color: #3498db; /* Blue background for headers */
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tr:hover {
+  background-color: #e3f2fd; /* Light blue on hover */
+  transition: background-color 0.3s ease;
+}
+
+button {
+  margin-right: 8px;
+}
+
+/* Edit and Delete button styles */
+button {
+  background-color: #3498db; /* Blue color for Edit button */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button.delete {
+  background-color: #e74c3c; /* Red color for delete button */
+}
+
+button.delete:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Animations for adding and updating data */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.table-body tr {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Transitions for table rows */
+.table-body tr {
+  transition: transform 0.3s ease-in-out;
+}
+
+.table-body tr:hover {
+  transform: scale(1.02);
+}
